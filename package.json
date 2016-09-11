@@ -1,0 +1,28 @@
+{
+  "name": "instagram-app",
+  "version": "0.0.1",
+  "description": "A client side search tool for the instragram api, es6+react",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/avantgrogg/instagram-app.git"
+  },
+  "keywords": [
+    "instagram",
+    "react",
+    "es6",
+    "fetch"
+  ],
+  "author": "avantgrogg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avantgrogg/instagram-app/issues"
+  },
+  "homepage": "https://github.com/avantgrogg/instagram-app#readme",
+  "dependencies": {
+    "lodash": "^4.15.0"
+  }
+}
