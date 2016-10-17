@@ -6,9 +6,9 @@ let myHeaders = new Headers({
 
 let myInit = { method: 'GET', headers: myHeaders };
 
-export function performImgurSearch(searchValue, store) {
+export function performImgurSearch(searchValue, dispatch) {
     fetch(`https://api.imgur.com/3/gallery/r/${searchValue}`,myInit)
-    .then((response) => response.json())
-    .then((response) => response.data.filter((image, idx) => idx < 10))
-    .then((images) => store.dispatch(imageSearchAction(images)));
+      .then((response) => response.json())
+      .then((response) => response.data.filter((image, idx) => idx < 10))
+      .then((images) => dispatch(imageSearchAction(images)));
 }
